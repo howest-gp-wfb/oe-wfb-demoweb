@@ -1,0 +1,22 @@
+:root{
+    --color-dark: #3C3C3C;
+    --color-accent: #FF5A5F;
+    --color-light: #F5F5F5;
+
+}
+
+div{
+    border: 1px solid var(--color-dark);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+}
+div h2{
+    color: var(--color-dark);
+    text-decoration: underline;
+}
+
+.h2-normal{
+    color: var(--color-dark);
+    text-decoration: none;
+}

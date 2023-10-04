@@ -1,0 +1,36 @@
+:root{
+    --color-dark: #3C3C3C;
+    --color-accent: #FF5A5F;
+    --color-light: #F5F5F5;
+}
+
+.text-align-center{
+    text-align: center;
+}
+.text-align-right{
+    text-align: right;
+}
+.text-align-left{
+    text-align: left;
+}
+.text-align-justify{
+    text-align: justify;
+}
+
+
+.font-size-big{
+    font-size: 2rem;
+}
+
+.font-family-test{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#deel5{
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+h2#deel4{
+    color: var(--color-accent);
+}
