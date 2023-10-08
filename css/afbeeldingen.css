@@ -1,0 +1,63 @@
+:root{
+    --color-dark: #3C3C3C;
+    --color-accent: #FF5A5F;
+    --color-light: #F5F5F5;
+
+}
+
+/* Achtergrond-afbeelding */
+html{
+    background: url("https://images.pexels.com/photos/993626/pexels-photo-993626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+.content-img {
+    width: 500px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 3px solid var(--color-dark);
+    border-radius: 8px;
+}
+
+/* Align */
+.img-small{
+    width: 200px;
+}
+
+.img-align-top{
+    vertical-align: top;
+}
+
+.img-align-bottom{
+    vertical-align: bottom;
+}
+
+.img-align-middle{
+    vertical-align: middle;
+}
+
+/* Float */
+.img-float-none{
+    float: none;
+}
+.img-float-right{
+    float: right;
+}
+.img-float-left{
+    float: left;
+}
+
+/* Clear */
+.img-clear-right{
+    clear: right;
+}
+.img-clear-left{
+    clear: left;
+}
+.img-clear-both{
+    clear: both;
+}

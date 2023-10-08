@@ -1,0 +1,20 @@
+.ol-list-style{
+    list-style-type: decimal;
+    list-style-type: lower-latin;
+    list-style-type: lower-roman;
+}
+
+.ul-list-style{
+    list-style: armenian;
+    list-style: square;
+}
+.ul-list-style-img{
+    list-style-image: url(../img/checklist.png);
+}
+
+.ul-list-style-inside{
+    list-style-position: inside;
+}
+.ul-list-style-outside{
+    list-style-position: outside;
+}

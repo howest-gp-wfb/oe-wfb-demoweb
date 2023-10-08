@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lijsten</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/lijsten.css">
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Start</a></li>
+                <li><a href="./handigeLinks.html">Handige links</a></li>
+                <li><a href="./hyperlinks/basisLinken.html">Basis linken</a></li>
+                <li><a href="./hyperlinks/superLangePagina.html">Superlangepagina</a></li>
+                <li><a href="./lijsten.html">Lijsten</a></li>
+                <li><a href="./selectors.html">Selectors</a></li>
+                <li><a href="./afbeeldingen.html">Afbeeldingen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Lijsten</h1>
+        
+        <h2>2 soorten</h2>
+        <!-- Ordered list -->
+        <div class="content-border">
+            <h3>Geordende lijst</h3>
+            <ol>
+                <li>Lijn 1</li>
+                <li>Lijn 2</li>
+                <li>Lijn 3</li>
+                <li>Lijn 4</li>
+                <li>Lijn 5</li>
+            </ol>
+        </div>
+
+        <!-- Unordered list -->
+        <div class="content-border">
+            <h3>Ongeordende lijst</h3>
+            <ul>
+                <li>Lijn 1</li>
+                <li>Lijn 2</li>
+                <li>Lijn 3</li>
+                <li>Lijn 4</li>
+                <li>Lijn 5</li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+
+        <h2>Dieper ingaan op geordende lijsten</h2>
+        <div class="content-border">
+            <h3>Geordende lijst omgekeerd</h3>
+            <ol reversed>
+                <li>Lijn 1</li>
+                <li>Lijn 2</li>
+                <li>Lijn 3</li>
+                <li>Lijn 4</li>
+                <li>Lijn 5</li>
+            </ol>
+        </div>
+        
+        <div class="content-border">
+            <h3>Geordende lijst type A</h3>
+            <ol type="A">
+                <li>Lijn 1</li>
+                <li>Lijn 2</li>
+                <li>Lijn 3</li>
+                <li>Lijn 4</li>
+                <li>Lijn 5</li>
+            </ol>
+        </div>
+        
+        <div class="content-border">
+            <h3>Geordende lijst begint bij...</h3>
+            <ol start="8">
+                <li>Lijn 1</li>
+                <li>Lijn 2</li>
+                <li>Lijn 3</li>
+                <li value="100">Lijn 4</li>
+                <li>Lijn 5</li>
+            </ol>
+        </div>
+
+        <div class="clear"></div>
+
+        <h2>Lijsten nesten</h2>
+        <div class="content-border">
+            <h3>Geordende lijsten</h3>
+            <ol>
+                <li>Lijn 1</li>
+                <li>Lijn 2</li>
+                <li> Een geneste lijn:
+                    <ol>
+                        <li>Een geneste lijn nr 1</li>
+                        <li>Een geneste lijn nr 2</li>
+                        <li>Een geneste lijn nr 3</li>
+                    </ol>
+                </li>
+                <li>Lijn 4</li>
+                <li>Lijn 5</li>
+            </ol>
+        </div>
+        <div class="content-border">
+            <h3>Ongeordende lijsten</h3>
+            <ul>
+                <li>Lijn 1</li>
+                <li>Lijn 2</li>
+                <li> Een geneste lijn:
+                    <ol>
+                        <li>Een geneste lijn nr 1</li>
+                        <li>Een geneste lijn nr 2</li>
+                        <li>Een geneste lijn nr 3</li>
+                    </ol>
+                </li>
+                <li>Lijn 4</li>
+                <li>Lijn 5</li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+
+        <h2>Styles</h2>
+        <div class="content-border">
+            <h3>Geordende lijst</h3>
+            <ol class="ol-list-style">
+                <li>Lijn nr 1</li>
+                <li>Lijn nr 2</li>
+                <li>Lijn nr 3</li>
+                <li>Lijn nr 4</li>
+                <li>Lijn nr 5</li>
+            </ol>
+        </div>
+        <div class="content-border">
+            <h3>Ongeordende lijst</h3>
+            <ul class="ul-list-style">
+                <li>Lijn nr 1</li>
+                <li>Lijn nr 2</li>
+                <li>Lijn nr 3</li>
+                <li>Lijn nr 4</li>
+                <li>Lijn nr 5</li>
+            </ul>
+        </div>
+        <div class="content-border">
+            <h3>Ongeordende lijst - afbeelding</h3>
+            <ul class="ul-list-style-img">
+                <li>Lijn nr 1</li>
+                <li>Lijn nr 2</li>
+                <li>Lijn nr 3</li>
+                <li>Lijn nr 4</li>
+                <li>Lijn nr 5</li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+        <h2>Style - position</h2>
+        <div class="content-border">
+            <h3>Normaal</h3>
+            <ul class="ul-list-style">
+                <li>Lijn nr 1</li>
+                <li>Lijn nr 2</li>
+                <li>Lijn nr 3</li>
+                <li>Lijn nr 4</li>
+                <li>Lijn nr 5</li>
+            </ul>
+        </div>
+        <div class="content-border">
+            <h3>Inside</h3>
+            <ul class="ul-list-style ul-list-style-inside">
+                <li>Lijn nr 1</li>
+                <li>Lijn nr 2</li>
+                <li>Lijn nr 3</li>
+                <li>Lijn nr 4</li>
+                <li>Lijn nr 5</li>
+            </ul>
+        </div>
+        <div class="content-border">
+            <h3>Outside</h3>
+            <ul class="ul-list-style ul-list-style-outside">
+                <li>Lijn nr 1</li>
+                <li>Lijn nr 2</li>
+                <li>Lijn nr 3</li>
+                <li>Lijn nr 4</li>
+                <li>Lijn nr 5</li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+
+    <!-- Footer -->
+</body>
+</html>
