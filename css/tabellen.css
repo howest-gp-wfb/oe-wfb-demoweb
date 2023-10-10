@@ -1,0 +1,58 @@
+.content-border{
+    width: 300px;
+}
+
+
+table.voorbeeld2{
+    /* Stap 1: Pas de border van de tabel aan naar 1px solid #FF5A5F */
+    
+    /* Stap 2: Pas de achtergrondkleur aan naar #3C3C3C */
+    
+    /* Stap 3: Pas de tekstkleur aan naar #F5F5F5 */
+
+    /* Stap 4: Pas de tabelbreedte aan naar 50% */
+}
+
+/* CSS van de caption voor voorbeeld 2 */
+table.voorbeeld2 > caption{
+    /* Stap 1: Tekstuitlijning links */
+
+    /* Stap 2: Font-style italic */
+
+    /* Stap 3: Font-variant small-caps */
+
+    /* Stap 4: Tekstkleur #3C3C3C */
+
+}
+
+/* Pas de header van de tabel "voorbeeld3" aan */
+.voorbeeld3 > thead{
+    /* Stap 1: Pas de achtergrondkleur aan naar #3C3C3C */
+
+    /* Stap 2: Pas de tekstkleur aan naar #F5F5F5 */
+
+}
+/* Pas de footer van de tabel "voorbeeld3" aan */
+.voorbeeld3 > tfoot{
+    /* Stap 1: Pas de achtergrondkleur aan naar #FF5A5F */
+
+    /* Stap 2: Pas de tekstkleur aan naar #F5F5F5 */
+
+}
+
+/* CSS-colgroup */
+.table-colgroup{
+    /* Stap 1: Pas de achtergrondkleur van de 2 eerste kolommen aan naar #FF5A5F */
+
+}
+
+/* Deze css-code is geldig voor zowel een th van een tabel met de klasse "tabel-border" als voor een td van een tabel met de klasse "table-border" */
+/* Je kan meerdere elementen dezelfde css-code laten gebruiken door gebruik te maken van een "," tussen de elementen */
+table.table-border th, table.table-border td{
+    /* Stap 1: Geef de tabel een border van 1px met de kleur #3C3C3C */
+
+}
+
+table.table-border{
+    /* Stap 1: Pas de code aan zodat je maar 1 rand hebt - TIP: Collapse*/
+}

@@ -18,7 +18,7 @@ a{
     color: var(--color-dark);
 }
 
-.content{
+main, .content{
     border: 3px solid var(--color-dark);
     border-radius: 8px;
     padding: 16px;
