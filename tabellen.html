@@ -27,84 +27,131 @@
     <div class="content">
         <h1>Tabellen</h1>
 
-        <!-- Een gewone tabel -->
         <div class="content-border">
-            <h2>Een gewone tabel</h2>
-            <!-- PLAATS HIER JE CODE -->
+            <h2>Voorbeeld 1</h2>
+            <table>
+                <tr><th>Voornaam</th><th>Naam</th></tr>
+                <tr><td>Tibo</td><td>VC</td></tr>
+            </table>
         </div>
         
-        <!-- Een tabel met caption -->
         <div class="content-border">
-            <h2>Tabel met caption</h2>
-            <!-- Stap 1: Maak een nieuwe tabel aan (neem het voorbeeld van hierboven) -->
-            <!-- Stap 2: Voeg een caption aan de tabel toe met daarin "Een tabel met namen" -->
-            <!-- Stap 3: Voeg de css-klasse "voorbeeld2" toe aan de tabel + pas het css-bestand aan -->
-
-            <!-- PLAATS HIER JE CODE -->
+            <h2>Voorbeeld 2</h2>
+            <table class="voorbeeld2">
+                <caption>Een tabel met namen</caption>
+                <tr><th>Voornaam</th><th>Naam</th></tr>
+                <tr><td>Tibo</td><td>VC</td></tr>
+            </table>
         </div>
         <div class="clear"></div>
 
-        <!-- Elementen groeperen -->
         <div class="content-border">
-            <h2>Elementen groeperen</h2>
-            <!-- Stap 1: Maak een nieuwe tabel aan met de klasse "voorbeeld 3" -->
-
-            <!-- Stap 2: Voeg een caption aan de tabel toe met daarin "Een tabel met namen" -->
-            
-            <!-- Stap 3: Voeg een footer toe met het aantal rijen -->
-            
-            <!-- Stap 4: Groepeer de kolomnamen (thead), body (tbody) en de footer (tfoot) van de tabel -->
-
-            <!-- Stap 5: Pas het css-bestand aan -->
-
-            <!-- PLAATS HIER JE CODE -->
+            <h2>Rijen groeperen</h2>
+            <table class="voorbeeld3">
+                <caption>Een tabel met namen</caption>
+                <thead>
+                    <tr><th>Voornaam</th><th>Naam</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Tibo</td><td>VC</td></tr>
+                </tbody>
+                <tfoot>
+                    <!-- Bv aantal namen -->
+                    <tr><td>1</td><td>1</td></tr>
+                </tfoot>
+            </table>
         </div>
         <div class="clear"></div>
 
         <h2>Groeperen</h2>
         <div class="content-border">
             <h3>Colgroup</h3>
-            <!-- Stap 1: Maak een nieuwe tabel aan met 3 kolommen (kolom 1, kolom 2, kolom 3) en 6 rijen (cel 1, cel 2, cel 3) -->
-            <!-- Maak bij het aanmaken van de tabel gebruik van een caption, thead en een tbody -->
-
-            <!-- Stap 2: Maak in de thead een colgroup aan met 2 kolommen en geef 1 van de 2 kolommen een span van 2 -->
-            <!-- Stap3: Voeg aan de eerste volgroup de css-klasse "table-colgroup" toe -->
-            <!-- Stap 4: Pas de css-code aan -->
-
-            <!-- PLAATS HIER JE CODE -->
-
+            <table class="">
+                <caption>Een tabel</caption>
+                <thead>
+                    <colgroup>
+                        <col span="2" class="table-colgroup">
+                        <col>
+                    </colgroup>
+                    <tr>
+                        <th>Kolom 1</th>
+                        <th>Kolom 1</th>
+                        <th>Kolom 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="content-border">
             <h3>Colspan</h3>
-            <!-- Stap 1: Neem de code van de vorige tabel -->
-            <!-- Stap 2: Verwijder de 2de kolom in thead -->
-            <!-- Stap 3: Voeg kolom 1 en kolom 2 samen (colspan) -->
-
-            <!-- PLAATS HIER JE CODE -->
+            <table class="">
+                <caption>Een tabel</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="table-colgroup">Kolom 1</th>
+                        <th>Kolom 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                </tbody>
+            </table>
         </div>
         
         <div class="content-border">
             <h3>Colspan</h3>
-            <!-- Stap 1: Neem de code van de vorige tabel -->
-            <!-- Stap 2: Verwijder de colgroup en plaats de 3de kolom terug -->
-            <!-- Stap 3: Verwijder de 2de kolom in rij 3 -->
-            <!-- Stap 4: Voeg kolom 1 en kolom 2 samen via colspan op rij 3 -->
-            <!-- Stap 5: Voeg de klasse "table-colgroup" toe aan deze cel -->
-
-            <!-- PLAATS HIER JE CODE -->
+            <table class="">
+                <caption>Een tabel</caption>
+                <thead>
+                    <tr>
+                        <th>Kolom 1</th>
+                        <th>Kolom 2</th>
+                        <th>Kolom 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td colspan="2" class="table-colgroup">Cel 1</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                </tbody>
+            </table>
         </div>
         <div class="content-border">
             <h3>Rowspan</h3>
-            <!-- Stap 1: Neem de code van de vorige tabel -->
-            <!-- Stap 2: Verwijder de colspan en plaats de cel van kolom 2 terug -->
-            <!-- Stap 3: Verwijder de eerste cel van rij 4 -->
-            <!-- Stap 4: Voeg kolom 1 en kolom 2 samen via rowspan op rij 4 -->
-            <!-- Stap 5: Voeg de klasse "table-colgroup" toe aan deze cel -->
-            <!-- Stap 6: Voeg de klasse "table-border" toe aan deze tabel -->
-            <!-- Stap 6: Pas de laatste css-code aan -->
-
-            <!-- PLAATS HIER JE CODE -->
+            <table class="table-border">
+                <caption>Een tabel</caption>
+                <thead>
+                    <tr>
+                        <th>Kolom 1</th>
+                        <th>Kolom 2</th>
+                        <th>Kolom 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td rowspan="2" class="table-colgroup">Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                </tbody>
+            </table>
         </div>
         <div class="clear"></div>
     </div>
