@@ -2,43 +2,57 @@
     Stap 1: ul met klasse color-dark
     Stap 2: tekstkleur: #3C3C3C
  */
-
+ ul.color-dark{
+   color: var(--color-dark);
+}
 
  /* 
     Stap 1: Maak de klasse "color-accent" aan.
     Stap 2: Pas de tekstkleur aan naar "blueviolet"
   */
-
+  .color-accent{
+   color: blueviolet;
+}
   
   /*
     Stap 1: Maak het id "voorbeeld2" aan.
     Stap 2: Pas de tekstkleur aan naar "blue"
    */
-
+   #voorbeeld2{
+      color: blue;
+  }
    
 
 /* 
     Stap 1: Maak de klasse "color-accent" aan.
     Stap 2: Verander de tekstkleur aan naar "#FF5A5F"
  */
-
+ .color-accent{
+   color: var(--color-accent);
+}
 
  /* 
     Stap 1: Maa de klasse "color-important" aan.
     Stap 2: Pas de tekstkleur aan naar "seagreen" !important
   */
-
+  .color-important{
+   color: seagreen !important;
+}
   
 
 /* Pas de tekstkleur van de link "https://howest.be" aan naar "cornflowerblue"
  */
-
+ a[href="https://howest.be"]{
+   color: cornflowerblue;
+}
  
 
  /* 
     Zorg ervoor dat de tekstkleur van de klassen "groep-1" en "groep-2" #FF5A5F is in 1 regel code
   */
-
+  .groep-1, .groep-2{
+   color: var(--color-accent);
+}
   
 
 
@@ -47,30 +61,42 @@
     - Zorg ervoor dat het woord "azerty" de tekstkleur "aqua"
     heeft zonder de HTML-code aan te passen.
    */
-
+   p b{
+      color: aqua;
+  }
    
 
 /* 
     CSS-code toepassen op broer/zus
     - Zorg ervoor dat enkel de tekstkleur van het b-element die na een p-element komt, "cadetblue" is.
  */
-
+ p>b{
+   color: cadetblue;
+}
  
 
 /* 
     CSS-code toepassen op broer/zus
     Pas de css-code aan zodat enkel een span-element die na een b-element komt, "brown" is.
  */
-
+ b ~ span{
+   color: brown;
+}
  
 /* 
     CSS-code toepassen op rechtstreekse nakomeling
     Stap 1: Pas de code aan zodat enkel het u-element dat na een b-element komt, "brown" is.
     Stap 2: Pas de css aan zodat enkel het u-element dat na een span-element komt, "blue"is.
  */
-
+ span + u{
+   color: brown;
+}
 /* Pseudo */
 
 /*
     Pas de css-code aan zodanig dat de achtergrondkleur "blue" is als je over de klasse "psuedoklasse-voorbeeld-1" wrijft
  */
+
+ .psuedoklasse-voorbeeld-1:hover{
+   background-color: blue;
+}

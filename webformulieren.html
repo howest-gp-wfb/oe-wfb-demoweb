@@ -29,7 +29,11 @@
         <h1>Webformulieren</h1>
         <article>
             <h3>Standaard webformulier</h3>
-
+            <form>
+                <label for="naam">Naam</label>
+                <input type="text" name="naam" id="naam">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <div class="clear"></div>
@@ -38,11 +42,21 @@
         <article>
             <h3>GET</h3>
             <!-- Neem het standaard webformulier en voeg er een GET-methode aan toe -->
+            <form method="GET">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <article>
             <h3>POST</h3>
             <!-- Neem het standaard webformulier en voeg er een POST-methode aan toe -->
+            <form method="POST">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <div class="clear"></div>
@@ -53,6 +67,11 @@
             <!-- Stap 1: Neem het standaard webformulier en voeg er een GET-methode aan toe -->
             <!-- Stap 2: Voeg er een action aan toe -->
             <!-- Link action = https://jkorpela.fi/cgi-bin/echo.cgi -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <div class="clear"></div>
@@ -62,6 +81,11 @@
             <h3>ACCEPT-CHARSET</h3>
             <!-- Stap 1: Neem het formulier van "Action" -->
             <!-- Stap 2: Voeg er een ACCEPT-CHARSET aan toe met de waarde "UTF-8" -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi" accept-charset="utf-8">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam">
+                <button>Versturen</button>
+            </form>
         </article>
         
         <article>
@@ -69,6 +93,11 @@
             <!-- Stap 1: Neem het formulier van "Action" -->
             <!-- Stap 2: Voeg er een AUTOCOMPLETE aan toe -->
             <!-- Stap 3: Zet autocomplete af -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi" autocomplete="on">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam">
+                <button>Versturen</button>
+            </form>
         </article>
         
         <article>
@@ -77,12 +106,22 @@
             <!-- Stap 2: Verander de method naar "POST" -->
             <!-- Stap 3: Voeg er een enctype aan toe -->
             <!-- Stap 4: Zoek de 3 verschillende soorten en probeer ze uit -->
+            <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" enctype="text/plain">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <article>
             <h3>NOVALIDATE</h3>
             <!-- Stap 1: Neem het formulier van "Action" -->
             <!-- Stap 2: Zorg ervoor dat je browser geen validatie toepast -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi" novalidate>
+                <label for="naam">Naam</label>
+                <input type="text" name="naam">
+                <button>Versturen</button>
+            </form>
         </article>
         
         
@@ -90,6 +129,11 @@
             <h3>TARGET</h3>
             <!-- Stap 1: Neem het formulier van "Action" -->
             <!-- Stap 2: Zoek de 5 verschillende targets op en probeer ze uit (TIP: Schrijf in commentaar wat ze allemaal doen) -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <div class="clear"></div>
@@ -99,12 +143,15 @@
         <article>
             <h3>Een eenvoudig invoerveld</h3>
             <!-- Stap 1: Maak een invoerveld waarbij de gebruiker zijn naam kan ingeven -->
+            <input type="text" name="naam">
         </article>
 
         <article>
             <h3>Label</h3>
             <!-- Stap 1: Maak een invoerveld aan met en id (bijv. naam_vb_3) -->
             <!-- Stap 2: Voeg er een label aan toe en zorg ervoor dat je kan typen wanneer je op het label klikt. -->
+            <label for="naam_vb_3">Naam</label>
+            <input type="text" name="naam" id="naam_vb_3">
         </article>
 
         <div class="clear"></div>
@@ -114,6 +161,7 @@
             <h3>Placeholder</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Voeg er een placeholder aan toe -->
+            <input type="text" name="naam" placeholder="Naam">
         </article>
         
         <article>
@@ -121,12 +169,22 @@
             <!-- Stap 1: Gebruik de form van action -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker minstens 3 karakters moet typen -->
             <!-- Stap 3: Zorg ervoor dat de gebruiker maximaal 10 karakters kan typen -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam" minlength="3" maxlength="10">
+                <button>Versturen</button>
+            </form>
         </article>
         
         <article>
             <h3>Required</h3>
             <!-- Stap 1: Gebruik de form van Min- & max-lengte -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker het veld moet invullen -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam" minlength="3" maxlength="10" required>
+                <button>Versturen</button>
+            </form>
         </article>
 
         <div class="clear"></div>
@@ -137,6 +195,7 @@
             <h3>Wachtwoord</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de teksens niet meer leesbaar zijn -->
+            <input type="password">
         </article>
         
         <article>
@@ -144,12 +203,22 @@
             <!-- Stap 1: Gebruik het formulier van "action" -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker een e-mail moet invullen -->
             <!-- Stap 3: Test het eens op je GSM -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <article>
             <h3>Telefoonnummer</h3>
             <!-- Stap 1: Gebruik het formulier van "action" -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker een telefoonnummer moet invullen -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <label for="telefoon">Telefoon</label>
+                <input type="tel" name="telefoon" id="telefoon" placeholder="04xx/12.34.56">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <article>
@@ -157,19 +226,29 @@
             <!-- Stap 1: Gebruik het formulier van "action" -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker een link kan ingeven -->
             <!-- Stap 3: Bekijk de pagina op je GSM -->
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <label for="link">Link</label>
+                <input type="url" name="link" id="link" placeholder="https://www.google.be">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <article>
             <h3>Search</h3>
             <!-- Stap 1: Gebruik het formulier van "action" -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker een zoekterm kan ingeven -->
-
+            <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <label for="zoekterm">Zoekterm</label>
+                <input type="search" name="zoekterm" id="zoekterm" placeholder="Zoekterm">
+                <button>Versturen</button>
+            </form>
         </article>
 
         <article>
             <h3>Tekstvak met meerdere regels tekst</h3>
             <!-- Stap 1: Maak een tekstblok waarin de gebruiker meerdere regels kan typen -->
             <!-- Stap 2: Zorg ervoor dat er 10 rijen en 30 kolommen zijn -->
+            <textarea name="tekst" id="tekst" cols="30" rows="10"></textarea>
         </article>
 
         <article>
@@ -177,6 +256,7 @@
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de kleur kan invullen -->
             <!-- Stap 3: Verander de standaardwaarde naar "FF0000" -->
+            <input type="color" value="#FF0000">
         </article>
 
         <div class="clear"></div>
@@ -187,30 +267,35 @@
             <h3>Lokale datum en tijd</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de datum kan ingeven -->
+            <input type="datetime-local">
         </article>
 
         <article>
             <h3>Datum</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de datum kan ingeven -->
+            <input type="date">
         </article>
 
         <article>
             <h3>Tijd</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de tijd kan ingeven -->
+            <input type="time">
         </article>
 
         <article>
             <h3>Maand</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de maand kan ingeven -->
+            <input type="month">
         </article>
 
         <article>
             <h3>Week</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de week kan ingeven -->
+            <input type="week">
         </article>
 
         <div class="clear"></div>
@@ -221,6 +306,7 @@
             <h3>Getallen</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de getallen kan ingeven -->
+            <input type="number">
         </article>
 
         <article>
@@ -228,6 +314,7 @@
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de getallen kan ingeven -->
             <!-- Stap 3: Zorg ervoor dat de gebruiker de getallen kan verhogen per 3 -->
+            <input type="number" step="3">
         </article>
 
         <article>
@@ -235,6 +322,7 @@
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de getallen kan ingeven -->
             <!-- Stap 3: Zorg ervoor dat de gebruiker minstens een 3 moet ingeven en max een 16 -->
+            <input type="number" min="3" max="15">
         </article>
 
         <article>
@@ -242,6 +330,7 @@
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker de getallen kan ingeven -->
             <!-- Stap 3: Verander de step naar 0.1 -->
+            <input type="number" step="0.1">
         </article>
 
         <div class="clear"></div>
@@ -252,13 +341,27 @@
             <h3>Range</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Zorg ervoor dat de gebruiker via een schuif-systeem een waarde kan ingeven tussen 0 en 10. -->
+            <input type="range" min="0" max="10">
         </article>
 
         <article>
             <h3>Range met datalist</h3>
             <!-- Stap 1: Maak een invoerveld aan -->
             <!-- Zorg ervoor dat de gebruiker via een schuif-systeem een waarde kan ingeven.-->
-           
+            <input type="range" list="list-getallen" min="0" max="10">
+            <datalist id="list-getallen">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist> 
         </article>
 
         <div class="clear"></div>
