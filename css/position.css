@@ -1,0 +1,58 @@
+:root{
+    --onyx: #3c3c3cff;
+    --white-smoke: #f5f5f5ff;
+    --bittersweet: #ff5a5fff;
+    --chartreuse: #c7ef00ff;
+    --tropical-indigo: #a288e3ff;
+    --vista-blue: #7899d4ff;
+}
+
+.color-onyx{
+    background-color: var(--onyx);
+}
+
+.color-white-smoke{
+    background-color: var(--white-smoke);
+}
+
+.color-bittersweet{
+    background-color: var(--bittersweet);
+}
+
+.color-chartreuse{
+    background-color: var(--chartreuse);
+}
+
+.color-tropical-indigo{
+    background-color: var(--tropical-indigo);
+}
+
+.color-vista-blue{
+    background-color: var(--vista-blue);
+}
+
+/* 
+1: Boxbreedte: 500px
+2/ Box-hoogte: 500px
+*/
+
+.box-large{
+
+}
+
+/* 
+1: Breedte: 300px
+2: Hoogte: 300px
+*/
+
+.box-mid{
+}
+
+/* 
+1: Breedte: 200px
+2: Hoogte: 100px
+*/
+
+.box-small{
+
+}
