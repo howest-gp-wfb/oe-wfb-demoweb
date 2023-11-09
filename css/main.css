@@ -27,7 +27,7 @@ main, .content{
     color: var(--color-dark);
     background-color: var(--color-light);
 }
-.content-border, main{
+.content-border, article{
     border: 3px solid var(--color-dark);
     border-radius: 8px;
 
