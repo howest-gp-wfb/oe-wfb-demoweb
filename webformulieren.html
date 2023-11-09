@@ -375,7 +375,9 @@
             <!-- Stap 4: Geef aan elk inputveld een waarde mee -->
             <!-- Stap 5: Zorg ervoor dat de eerste knop geselecteerd is -->
             <!-- Stap 6: Zorg ervoor dat de laatste knop niet geselecteerd kan worden -->
-
+            <input type="checkbox" name="checkbox" id="checkbox1" value="1" checked><label for="checkbox1">Knop 1</label>
+            <input type="checkbox" name="checkbox" id="checkbox2" value="2"><label for="checkbox2">Knop 2</label>
+            <input type="checkbox" name="checkbox" id="checkbox3" value="3" disabled><label for="checkbox3">Knop 3</label>      
         </article>
 
         <article>
@@ -387,6 +389,9 @@
             <!-- Stap 5: Zorg ervoor dat er maar 1 inputveld geselecteerd kan worden -->
             <!-- Stap 6: Zorg ervoor dat de eerste knop geselecteerd is -->
             <!-- Stap 7: Zorg ervoor dat de laatste knop niet geselecteerd kan worden -->
+            <input type="radio" name="radioknop" id="radioknop1" value="1" checked><label for="radioknop1">Knop 1</label>
+            <input type="radio" name="radioknop" id="radioknop2" value="2"><label for="radioknop2">Knop 2</label>
+            <input type="radio" name="radioknop" id="radioknop3" value="3" disabled><label for="radioknop3">Knop 3</label>      
         </article>
 
         <div class="clear"></div>
@@ -398,6 +403,11 @@
             <!-- Stap 2: Voeg er 3 opties aan toe -->
             <!-- Stap 3: Geef elke optie een waarde die zichtbaar is en een waarde die niet zichtbaar is -->
             <!-- Stap 4: Zorg ervoor dat de tweede optie geselecteerd is -->
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2" selected>Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
         </article>
 
         <article>
@@ -405,11 +415,27 @@
             <!-- Stap 1: Gebruik de select van de vorige oefening -->
             <!-- Stap 2: Zorg ervoor dat er meerdere opties zichtbaar zijn -->
             <!-- Stap 3: Beperk het aantal zichtbare opties tot 2 -->
+            <select multiple="multiple" size="2">
+                <option value="1">Option 1</option>
+                <option value="2" selected>Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
         </article>
 
         <article>
             <h3>Select met categorieën</h3>
             <!-- Stap 1: Voeg aan de eerste 3 opties de categorie "Hardhout" toe en aan de laatste 3 opties de categorie "Zachthout" -->
+            <select name="wood-selection">
+                <optgroup label="Hardhout">
+                <option value="EIK">Eik</option>
+                <option value="BEU">Beuk</option>
+                <option value="MER">Meranti</option>
+                </optgroup>
+                <optgroup label="Zachthout">
+                <option value="CED">Ceder</option>
+                <option value="DEN">Den</option>
+                </optgroup>
+            </select>
         </article>
 
         <div class="clear"></div>
@@ -421,18 +447,26 @@
             <!-- Stap 1: Maak een inputveld aan -->
             <!-- Stap 2: Maak een datalist aan met daarin verschillende opties -->
             <!-- Stap 3: Koppel de datalist aan het inputveld -->
+            <input type="text" list="suggestie">
+            <datalist id="suggestie">
+                <option value="bob">bob</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+            </datalist>
         </article>
 
         <article>
             <h3>Verborgen velden</h3>
             <!-- Stap 1: Maak een inputveld aan -->
             <!-- Stap 2: Verberg het veld -->
+            <input type="hidden">
         </article>
 
         <article>
             <h3>Bestand</h3>
             <!-- Stap 1: Maak een inputveld aan -->
             <!-- Stap 2: Zorg ervoor dat de gebruiker een bestand kan selecteren -->
+            <input type="file" name="uploaded-file"/>
         </article>
 
         <div class="clear"></div>
@@ -441,26 +475,31 @@
         <article>
             <h3>Standaard knop</h3>
             <!-- Stap 1: Maak een standaard knop aan -->
+            <button>KNOP</button>
         </article>
         <article>
             <!-- Stap 1: Maak een submit-knop aan via een input-veld -->
             <h3>Knop via input - submit</h3>
+            <input type="submit" value="Knop">
         </article>
         <article>
             <!-- Stap 1: Maak een knop aan waarin je een afbeelding kan plaatsen -->
             <h3>Afbeelding in knop</h3>
+            <input type="image" src="./img/checklist.png" alt="Questionmark" title="Meer Info" />
         </article>
 
         <article>
             <!-- Stap 1: Maak een knop aan die de gegevens reset -->
             <!-- Stap 2: Test het uit in een form -->
             <h3>Resetknop</h3>
+            <input type="reset" value="Ongedaan maken">
         </article>
 
         <article>
             <h3>Input knop</h3>
             <!-- Stap 1: Maak een inputveld aan en vorm het om tot een knop -->
             <!-- Stap 2: Test de knop in een form -->
+            <input type="button" value="Klik en er gebeurt noppes" />
         </article>
         <div class="clear"></div>
 
@@ -471,13 +510,13 @@
             <!-- Stap 1: Zorg ervoor dat je via de tab-toets van invoerveld 1 naar invoerveld 2 kan gaan en van invoerveld 2 naar invoerveld 3 -->
             <form>
                 <label for="tabvolgorde-veld1">Veld 1</label>
-                <input type="text" id="tabvolgorde-veld1">
+                <input type="text" id="tabvolgorde-veld1" tabindex="1">
                 
                 <label for="tabvolgorde-veld3">Veld 3</label>
-                <input type="text" id="tabvolgorde-veld3">
+                <input type="text" id="tabvolgorde-veld3" tabindex="3">
                 
                 <label for="tabvolgorde-veld2">Veld 2</label>
-                <input type="text" id="tabvolgorde-veld2">
+                <input type="text" id="tabvolgorde-veld2" tabindex="2">
             </form>
         </article>
         
@@ -486,13 +525,13 @@
             <h3>Sneltoetsen</h3>
             <form>
                 <label for="sneltoetsen-veld1">Veld a</label>
-                <input type="text" id="sneltoetsen-veld1">
+                <input type="text" id="sneltoetsen-veld1" accesskey="a">
                 
                 <label for="sneltoetsen-veld3">Veld b</label>
-                <input type="text" id="sneltoetsen-veld3">
+                <input type="text" id="sneltoetsen-veld3" accesskey="b">
                 
                 <label for="sneltoetsen-veld2">Veld c</label>
-                <input type="text" id="sneltoetsen-veld2">
+                <input type="text" id="sneltoetsen-veld2" accesskey="c">
             </form>
         </article>
 

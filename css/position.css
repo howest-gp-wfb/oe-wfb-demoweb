@@ -37,7 +37,8 @@
 */
 
 .box-large{
-
+    width: 500px;
+    height: 500px;
 }
 
 /* 
@@ -46,6 +47,8 @@
 */
 
 .box-mid{
+    width: 300px;
+    height: 300px;
 }
 
 /* 
@@ -55,4 +58,14 @@
 
 .box-small{
 
+}
+
+
+/* Positions */
+.position-static{
+    position: static;
+}
+
+.position-relative{
+    position: relative;
 }
