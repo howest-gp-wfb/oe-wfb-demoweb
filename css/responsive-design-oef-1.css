@@ -1,0 +1,24 @@
+html{
+    color: black;
+    background-color: white;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Tablet */
+@media only screen and (max-width: 60em){
+    body{
+        color: blue;
+        background-color: palegreen;
+    }
+}
+
+   /* Computer */
+@media only screen and (min-width:800px){
+    body{
+        color: white;
+        background-color: black;
+    }
+}

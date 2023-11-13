@@ -1,0 +1,14 @@
+#div1{
+    top: 0;
+    left: 50%;
+}
+
+#div2{
+    top: 50%;
+    right: 0%;
+}
+
+#div3{
+    bottom: 0%;
+    right: 0%;
+}

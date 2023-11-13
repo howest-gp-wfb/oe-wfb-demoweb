@@ -19,15 +19,6 @@ a{
 }
 
 
-main{
-    border: 3px solid var(--color-dark);
-    border-radius: 8px;
-    padding: 16px;
-    margin: 32px;
-
-    color: var(--color-dark);
-    background-color: var(--color-light);
-}
 article{
     border: 3px solid var(--color-dark);
     border-radius: 8px;
@@ -45,6 +36,11 @@ article{
 }
 
 /* Menu */
+nav{
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    width: 100%;
+}
 nav ul{
     list-style: none;
     background-color: var(--color-dark);
@@ -58,8 +54,9 @@ nav li{
     font-size: 1.2rem;
     line-height: 40px;
     height: 40px;
-    display: inline-block;
-    width: 120px;
+    /* display: inline-block; */
+    display: none;
+    width: 100%;
 }
 
 nav a{
@@ -70,4 +67,21 @@ nav a{
 nav a:hover{
     background-color: var(--color-light);
     color: var(--color-dark);
+}
+
+#menu-mobile{
+    display: none;
+}
+#menu-mobile:checked + ul li{
+    display: inline-block;
+}
+
+@media only screen and (min-width: 1025px){
+    nav li{
+        display: inline-block;
+        width: 120px;
+    }
+    #menu-mobile-open{
+        display: none;
+    }
 }
