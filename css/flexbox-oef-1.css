@@ -1,0 +1,15 @@
+:root{
+    --color-dark: #3C3C3C;
+    --color-accent: #FF5A5F;
+    --color-light: #F5F5F5;
+}
+
+.box{
+    color: var(--color-light);
+    background-color: var(--color-dark);
+
+    width: 100px;
+    height: 100px;
+
+    margin: 1rem;
+}
