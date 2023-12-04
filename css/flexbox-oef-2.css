@@ -1,0 +1,141 @@
+:root{
+    --color-dark: #3C3C3C;
+    --color-accent: #FF5A5F;
+    --color-light: #F5F5F5;
+}
+
+html{
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    font-size: 16px;
+}
+
+h1{
+    color: var(--color-dark);
+}
+
+a{
+    color: var(--color-dark);
+}
+
+main{
+    padding: 1rem;
+}
+
+
+article{
+    border: 3px solid var(--color-dark);
+    border-radius: 8px;
+
+    padding: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+
+    min-width: 200px;
+    float: left;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width:800px){
+    main{
+        color: var(--color-dark);
+        background-color: var(--color-light);
+
+        padding: 16px;
+        margin: 32px; 
+    }
+    article{
+        border: 3px solid var(--color-dark);
+        border-radius: 8px;
+    
+        padding: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+    
+        width: 600px;
+        float: left;
+    }
+}
+
+/* Menu */
+nav{
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    background-color: var(--color-dark);
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    font-size: 1.2rem;
+    line-height: 40px;
+    height: 40px;
+    /* display: inline-block; */
+    display: none;
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-light);
+    display: block;
+}
+nav a:hover{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+#menu-mobile{
+    display: none;
+}
+#menu-mobile:checked + ul li{
+    display: inline-block;
+}
+
+@media only screen and (min-width: 1025px){
+    nav li{
+        display: inline-block;
+        width: 120px;
+    }
+    #menu-mobile-open{
+        display: none;
+    }
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (min-width:800px){
+    .img-high{
+        width: auto;
+        height: 60vh;
+    }
+    .img-width{
+        width: 45vw;
+        height: auto;
+    }
+
+    .float-left {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .vh-100{
+        height: 100vh;
+    }
+}

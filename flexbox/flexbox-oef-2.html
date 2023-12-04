@@ -1,3 +1,57 @@
-<!-- Maak de oefening van responsive hier verder af (de demowebsite van fietsen) -->
-<!-- Doe dit doormiddel van flexbox -->
-<!-- Zorg ervoor dat de website zowel op een laptop, smartphone als op een tablet leesbaar is -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demoweb - Responsive design</title>
+    <link rel="stylesheet" href="../css/flexbox-oef-2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <label for="menu-mobile">
+                <span class="material-symbols-outlined float-right" id="menu-mobile-open">
+                    menu
+                </span>
+            </label>
+            <input type="checkbox" id="menu-mobile">
+            <ul>
+                <li><a href="./index.html">Start</a></li>
+                <li><a href="./handigeLinks.html">Handige links</a></li>
+                <li><a href="./hyperlinks/basisLinken.html">Basis linken</a></li>
+                <li><a href="./hyperlinks/superLangePagina.html">Superlangepagina</a></li>
+                <li><a href="./lijsten.html">Lijsten</a></li>
+                <li><a href="./selectors.html">Selectors</a></li>
+                <li><a href="./afbeeldingen.html">Afbeeldingen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <section class="vh-100 flex-container">
+            <img src="../img/zadel_fiets.jpg" alt="Fietszadel" class="img-high center">
+            <h1 class="center">Demoweb</h1>
+        </section>
+        <section class="flex-container">
+            <img src="../img/fiets-tegen-boom.jpg" alt="Fiets tegen boom" class="img-width">
+            <img src="../img/fiets-in-bos.jpg" alt="Fiets in bos" class="img-width">
+        </section>
+        <section class="vh-100 flex-container">
+            <article>
+                <h2>De geschiedenis van de fiets</h2>
+                <p>Ah, de geschiedenis van de fiets is echt fascinerend! Het begon allemaal in het begin van de 19e eeuw. De voorloper van de moderne fiets was de "draisine" of loopfiets, uitgevonden door Karl Drais in 1817. Het was eigenlijk een loopfiets zonder pedalen, waar mensen zich met hun voeten op de grond duwden om vooruit te komen.
+
+                    Vervolgens kwam de "velocipede" in de jaren 1860, met pedalen bevestigd aan het voorwiel. Deze machines waren behoorlijk onstabiel en moeilijk te besturen. Pas in de jaren 1870 werd de kettingaandrijving geïntroduceerd, waardoor het achterwiel kon worden aangedreven. Hiermee ontstond de "safety bicycle," die sterk leek op de moderne fiets.
+                    
+                    De luchtbanden, uitgevonden door John Dunlop in 1888, verbeterden het comfort en de snelheid van fietsen aanzienlijk. In de 20e eeuw werden verdere verbeteringen doorgevoerd, zoals versnellingen en lichtgewicht materialen.
+                    
+                    En zo evolueerde de fiets van een eenvoudige loopfiets tot het geavanceerde vervoermiddel dat we vandaag kennen. Het is geweldig hoe een ogenschijnlijk eenvoudig concept zo'n ingrijpende ontwikkeling heeft doorgemaakt!</p>
+            </article>
+            <img src="../img/fiet-pompoen.jpg" alt="Fiets met pompoen" class="img-high">
+        </section>
+    </main>
+</body>
+</html>
